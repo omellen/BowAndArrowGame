@@ -219,6 +219,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271904908}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &394858820 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9097591894110645280, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
+  m_PrefabInstance: {fileID: 9097591892782500726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &458756196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 454702716566438216, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
@@ -913,6 +918,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 454702716566438216, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9097591894110645280, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -965,6 +974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9097591894110645294, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 394858820}
     - target: {fileID: 9097591894110645294, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
       propertyPath: ShotPoint
       value: 

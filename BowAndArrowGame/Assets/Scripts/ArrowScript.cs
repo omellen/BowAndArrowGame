@@ -1,30 +1,37 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ArrowScript : MonoBehaviour
 {
-    public float launchSpeed = 80f;
+    float launchSpeed = 80f;
 
     public GameObject Arrow;
     public Transform ShotPoint;
     public Transform Player;
+    public Transform cam;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            Quaternion arrowRotation = new Quaternion();
+            Quaternion arrowRotation = cam.rotation;
             GameObject createArrow = Instantiate(Arrow, ShotPoint.position, arrowRotation);
-            createArrow.transform.LookAt(Player);
-            createArrow.transform.Rotate(0, 90, 0);
 
-            createArrow.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 80);
+            createArrow.GetComponent<Rigidbody>().velocity = createArrow.transform.forward * launchSpeed;
+        }
+    }
 
-            //createArrow.transform.Translate(createArrow.transform.forward * launchSpeed);
-            
-            
+    private void OnCollisionEnter(Collision  c)
+    {
+        Debug.Log(c.collider.tag);
+        if (c.collider.name == "Target")
+        {
+            Quaternion arrowRotation = cam.rotation;
+            GameObject createArrow = Instantiate(Arrow, ShotPoint.position, arrowRotation);
+
+            createArrow.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 }

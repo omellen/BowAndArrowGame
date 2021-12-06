@@ -23,15 +23,15 @@ public class ArrowScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision  c)
+    private void OnCollisionEnter(Collision c)
     {
         Debug.Log(c.collider.tag);
         if (c.collider.name == "Target")
         {
-            Quaternion arrowRotation = cam.rotation;
-            GameObject createArrow = Instantiate(Arrow, ShotPoint.position, arrowRotation);
+            //Quaternion arrowRotation = cam.rotation;
+            //GameObject createArrow = Instantiate(Arrow, ShotPoint.position, arrowRotation);
 
-            createArrow.GetComponent<Rigidbody>().isKinematic = true;
+            //createArrow.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 }

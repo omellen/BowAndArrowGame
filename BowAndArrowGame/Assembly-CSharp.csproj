@@ -56,6 +56,8 @@
     <Compile Include="Assets/Scripts/MouseLook.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/CreateArrowScript.cs" />
+    <Compile Include="Assets/Scripts/ArrowScript.cs" />
+    <Compile Include="Assets/Scripts/CreateEnemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{521A9D7F-4010-09D1-5BF0-8DC8881702B8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CreateArrowScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CreateEnemy.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="17" Column="21" />
-      <File FileName="Assets/Scripts/MouseLook.cs" />
-      <File FileName="../../../Unity/Cube Runner/Assets/PlayerCollision.cs" />
-      <File FileName="Assets/CreateArrowScript.cs" Line="46" Column="9" />
+      <File FileName="Assets/ArrowScript.cs" Line="13" Column="10" />
+      <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="7" Column="27" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="33" Column="22" />
+      <File FileName="Assets/Scripts/MouseLook.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="15" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9bb739b4-fcac-4ce4-b3aa-9f3914e538be" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f8dcf2f2-90ac-4c01-8529-b818b1745ffd" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CreateArrowScript : MonoBehaviour
 {
-    float launchSpeed = 80f;
+    float launchSpeed = 100f;
 
     public GameObject Arrow;
     public Transform ShotPoint;
@@ -28,20 +28,4 @@ public class CreateArrowScript : MonoBehaviour
             currentArrow = createArrow;
         }
     }
-
-    private void OnCollisionEnter(Collision c)
-    {
-        Debug.Log(c.collider.name);
-    }
-    //private void OnCollisionEnter(Collision c)
-    // {
-    // Debug.Log(c.collider.name);
-    //if (c.transform.tag == "Arrow")
-    //{
-    //    c.transform.parent = target.transform;
-    //    c.rigidbody.isKinematic = true;
-    //    c.transform.Translate(depth * Vector3.forward);
-    //    c.transform.parent = transform;
-    //}
-    // }
 }

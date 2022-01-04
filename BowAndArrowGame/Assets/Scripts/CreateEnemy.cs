@@ -12,19 +12,20 @@ public class CreateEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine(EnemyDrop());
+        InvokeRepeating("Spawn", 4, 8);
     }
 
-    IEnumerable EnemyDrop()
+    Vector3 getRandomPos()
     {
-        while (enemyCount < 10)
-        {
-            xPos = Random.Range(-10, 10);
-            zPos = 20;
-            Instantiate(enemy, new Vector3(xPos, 1, zPos), Quaternion.identity);
-            yield return new WaitForSeconds(0.1f);
-            enemyCount += 1;
+        float _x = Random.Range(-20, 20);
+        float _y = 1;
+        float _z = 20;
 
-        }
-    } 
+        Vector3 newPos = new Vector3(_x, _y, _z);
+        return newPos;
+    }
+    void Spawn()
+    {
+        Instantiate(enemy, getRandomPos(), Quaternion.identity);
+    }
 }

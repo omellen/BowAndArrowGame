@@ -638,6 +638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 1815789542716360795}
+  enemy: {fileID: 8806104454052531322, guid: e36967958ffb0464c99314e70c4a1f34, type: 3}
 --- !u!1 &1815789542736623512
 GameObject:
   m_ObjectHideFlags: 0

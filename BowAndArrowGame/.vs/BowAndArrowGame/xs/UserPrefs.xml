@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{521A9D7F-4010-09D1-5BF0-8DC8881702B8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EnemyMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyMovement.cs">
     <Files>
-      <File FileName="Assets/Scripts/ArrowScript.cs" Line="17" Column="52" />
-      <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="7" Column="27" />
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="33" Column="22" />
+      <File FileName="Assets/Scripts/ArrowScript.cs" Line="14" Column="5" />
+      <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="13" Column="30" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="21" Column="1" />
       <File FileName="Assets/Scripts/MouseLook.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="15" Column="35" />
-      <File FileName="Assets/EnemyMovement.cs" Line="12" Column="50" />
+      <File FileName="Assets/Scripts/EnemyMovement.cs" Line="9" Column="1" />
+      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="15" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8404d3bc-0912-4dc6-a0d3-688e046caf0c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1e57b1d9-609c-4bed-b920-14096363f19b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

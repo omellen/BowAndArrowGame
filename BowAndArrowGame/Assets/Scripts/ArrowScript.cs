@@ -6,21 +6,33 @@ public class ArrowScript : MonoBehaviour
 {
     private float depth = 0.3f;
     public GameObject arrow;
+    public GameObject enemy;
 
+    private GameObject currentE;
+    public List<GameObject> enemyArray = new List<GameObject>();
+
+    void Start()
+    {
+        enemyArray = GameObject.Find("CreateEnemy").GetComponent<CreateEnemy>().enemyArray;
+    }
     private void OnCollisionEnter(Collision c)
     {
+        string name = "";
+
         Debug.Log(c.collider.name);
-        if (c.transform.tag == "tip2")
+        if(c.collider.tag == "Enemy")
         {
-            arrow.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
-            Vector3 coordinates = c.transform.position;
-            arrow.transform.position = coordinates;
-           
-            //c.transform.parent = c.collider.transform;
-            //c.rigidbody.isKinematic = true;
-            //c.transform.Translate(depth * Vector3.forward);
-            //c.transform.parent = transform;
-            
+            name = c.collider.name;
+            for(int i = 0; i < enemyArray.Capacity; i++)
+            {
+                if (enemyArray[i].name == name)
+                {
+                    currentE = enemyArray[i];
+                }
+            }
         }
+
+        Destroy(currentE);
+       
     }
 }

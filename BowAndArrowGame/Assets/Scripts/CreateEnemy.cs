@@ -45,7 +45,7 @@ public class CreateEnemy : MonoBehaviour
     {
         foreach (GameObject number in enemyArray)
         {
-            number.GetComponent<Rigidbody>().AddForce(number.transform.forward * 2.55f);
+            number.GetComponent<Rigidbody>().AddForce(number.transform.forward * 2.8f);
         }
     }
 }

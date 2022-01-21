@@ -24,11 +24,7 @@ public class ArrowScript : MonoBehaviour
         Debug.Log(c.collider.tag);
         if(c.collider.tag == "Enemy")
         {
-            Destroy(c.collider);
-
-
-
-
+            Destroy(c.collider.gameObject);
 
 
 

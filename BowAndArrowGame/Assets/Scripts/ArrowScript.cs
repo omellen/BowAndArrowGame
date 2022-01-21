@@ -15,24 +15,34 @@ public class ArrowScript : MonoBehaviour
     {
         enemyArray = GameObject.Find("CreateEnemy").GetComponent<CreateEnemy>().enemyArray;
     }
+
+
     private void OnCollisionEnter(Collision c)
     {
         string name = "";
 
-        Debug.Log(c.collider.name);
+        Debug.Log(c.collider.tag);
         if(c.collider.tag == "Enemy")
         {
-            name = c.collider.name;
-            for(int i = 0; i < enemyArray.Capacity; i++)
-            {
-                if (enemyArray[i].name == name)
-                {
-                    currentE = enemyArray[i];
-                }
-            }
+            Destroy(c.collider);
+
+
+
+
+
+
+
+            //name = c.collider.name;
+            //for(int i = 0; i < enemyArray.Capacity; i++)
+            //{
+            //    if (enemyArray[i].name == name)
+            //    {
+            //        currentE = enemyArray[i];
+            //    }
+            //}
         }
 
-        Destroy(currentE);
+        //Destroy(currentE);
        
     }
 }

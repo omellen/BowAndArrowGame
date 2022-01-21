@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.57481235, g: 0.57481235, b: 0.69211054, a: 1}
+  m_IndirectSpecularColor: {r: 0.5254071, g: 0.5254071, b: 0.6416234, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -420,7 +420,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106138257}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3115470fdebe7456d9da5b69677a0600, type: 2}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: c2f546fb619b246798c9243a0b326f90, type: 2}
   m_EnableTreeColliders: 1
@@ -886,7 +886,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8806104454052531322, guid: e36967958ffb0464c99314e70c4a1f34, type: 3}
+  tower: {fileID: 1877431340}
   player: {fileID: 394858820}
+  enemyArray: []
 --- !u!4 &1855119250
 Transform:
   m_ObjectHideFlags: 0
@@ -901,6 +903,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1877431340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5057653755723284925, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
+  m_PrefabInstance: {fileID: 5057653754573322787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5057653754573322787
 PrefabInstance:
   m_ObjectHideFlags: 0

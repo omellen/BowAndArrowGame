@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthScript : MonoBehaviour
-{   
+{
+    public GameObject barrier;
     void Start()
     {
         HealthBarHandler.SetHealthBarValue(1);
@@ -11,13 +12,10 @@ public class HealthScript : MonoBehaviour
 
     void Update()
     {
-        
-    }
-    private void OnCollisionEnter(Collision c)
-    {
-        if(c.collider.tag == "Enemy")
+        if(HealthBarHandler.GetHealthBarValue() == 0)
         {
-            HealthBarHandler.SetHealthBarValue(HealthBarHandler.GetHealthBarValue() - 0.01f);
+            Destroy(barrier);
         }
     }
+    
 }

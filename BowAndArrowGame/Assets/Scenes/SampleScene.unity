@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 44483439}
   m_Layer: 0
   m_Name: fence2
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 1122501807}
   m_Layer: 0
   m_Name: fence1
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 1334805578}
   m_Layer: 0
   m_Name: Barrier
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -878,6 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809d0268cb39f4118b45549e424cbb1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barrier: {fileID: 1334805576}
 --- !u!1 &1411686774
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,7 +988,7 @@ GameObject:
   - component: {fileID: 1425158782}
   m_Layer: 0
   m_Name: fence4
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1413,7 +1414,7 @@ GameObject:
   - component: {fileID: 1876879138}
   m_Layer: 0
   m_Name: fence3
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

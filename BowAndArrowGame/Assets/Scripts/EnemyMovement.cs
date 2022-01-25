@@ -35,6 +35,11 @@ public class EnemyMovement : MonoBehaviour
         if (c.collider.name == "arrow")
         {
             Destroy(enemy);
+            Destroy(c.collider.gameObject);
+        }
+        if (c.collider.tag == "Barrier")
+        {
+            HealthBarHandler.SetHealthBarValue(HealthBarHandler.GetHealthBarValue() - 0.05f);
         }
     }
 }

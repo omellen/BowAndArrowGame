@@ -22,12 +22,13 @@ public class ArrowScript : MonoBehaviour
         string name = "";
 
         Debug.Log(c.collider.tag);
-        if(c.collider.tag == "Enemy")
+        if (c.collider.tag == "Enemy")
         {
             Destroy(c.collider.gameObject);
+            Destroy(arrow);
         }
 
-       
-       
+
+
     }
 }

@@ -430,6 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 8806104454052531322}
   tower: {fileID: 5057653755723284924, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
+  arrow: {fileID: 1815789542716360795, guid: ec54680929bf145bb8f4366bc4868395, type: 3}
   enemyArray: []
 --- !u!54 &8459714307479345817
 Rigidbody:

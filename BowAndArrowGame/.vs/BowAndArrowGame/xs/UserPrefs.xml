@@ -1,35 +1,32 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ArrowScript.cs">
+﻿<Properties StartupConfiguration="{521A9D7F-4010-09D1-5BF0-8DC8881702B8}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CreateEnemy.cs">
     <Files>
       <File FileName="Assets/Scripts/ArrowScript.cs" Line="27" Column="42" />
       <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="18" Column="23" />
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="14" Column="40" />
       <File FileName="Assets/Scripts/MouseLook.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/EnemyMovement.cs" Line="23" Column="39" />
-      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="48" Column="85" />
+      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="5" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BowAndArrowGame" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="ArrowScript.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="BowAndArrowGame" expanded="True" selected="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1e57b1d9-609c-4bed-b920-14096363f19b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5e96a334-38d5-4033-a6c8-55f13a6634a4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

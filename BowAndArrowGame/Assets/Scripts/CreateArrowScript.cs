@@ -15,7 +15,6 @@ public class CreateArrowScript : MonoBehaviour
     private GameObject currentArrow;
     float depth = 0.3f;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.X))

@@ -7,7 +7,6 @@ public class EnemyMovement : MonoBehaviour
     public GameObject enemy;
     public Transform tower;
 
-
     public List<GameObject> enemyArray = new List<GameObject>();
 
     void Start()

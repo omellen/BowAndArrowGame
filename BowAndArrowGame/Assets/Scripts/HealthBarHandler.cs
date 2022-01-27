@@ -37,5 +37,6 @@ public class HealthBarHandler : MonoBehaviour
     private void Start()
     {
         HealthBarImage = GetComponent<Image>();
+        SetHealthBarValue(1);
     }
 }

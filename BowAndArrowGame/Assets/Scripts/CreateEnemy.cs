@@ -20,7 +20,7 @@ public class CreateEnemy : MonoBehaviour
    
     void Start()
     {
-        InvokeRepeating("Spawn", 4, 8);
+        InvokeRepeating("Spawn", 4, 5);
         GameObject itWorks = new GameObject();
         enemyArray[0] = itWorks;
     }

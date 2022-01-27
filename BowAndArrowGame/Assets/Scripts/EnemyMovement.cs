@@ -7,7 +7,6 @@ public class EnemyMovement : MonoBehaviour
     public GameObject enemy;
     public Transform tower;
 
-
     public List<GameObject> enemyArray = new List<GameObject>();
 
     void Start()
@@ -36,6 +35,11 @@ public class EnemyMovement : MonoBehaviour
         if (c.collider.name == "arrow")
         {
             Destroy(enemy);
+            Destroy(c.collider.gameObject);
+        }
+        if (c.collider.tag == "Barrier")
+        {
+            HealthBarHandler.SetHealthBarValue(HealthBarHandler.GetHealthBarValue() - 0.05f);
         }
     }
 }

@@ -1,29 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
     public GameObject enemy;
-    public Transform tower;
+    public Transform target;
+
+    float lookRadius = 80f;
+    NavMeshAgent agent;
 
     public List<GameObject> enemyArray = new List<GameObject>();
 
     void Start()
     {
-        //enemyArray = GameObject.Find("CreateEnemy.cs").GetComponent<CreateEnemy>().enemyArray;
+        agent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
-        //enemyArray = GameObject.Find("CreatingThyEnemy").GetComponent<CreateEnemy>().enemyArray;
         CreateEnemy tgt = new CreateEnemy();
         enemyArray = tgt.enemyArray;
-        enemy.transform.LookAt(tower);
+        enemy.transform.LookAt(target);
+
         foreach (GameObject number in enemyArray)
         {
-            Debug.Log(number);
-            number.GetComponent<Rigidbody>().AddForce(number.transform.forward * 10);
+            float distance = Vector3.Distance(target.position, transform.position);
+
+            if (distance <= lookRadius)
+                agent.SetDestination(target.position);
+
+            //Debug.Log(number);
+            //number.GetComponent<Rigidbody>().AddForce(number.transform.forward * 10);
         }
 
         //  enemy.AddComponent<Rigidbody>().AddForce(new Vector3(0, 0, -500));
@@ -41,5 +50,11 @@ public class EnemyMovement : MonoBehaviour
         {
             HealthBarHandler.SetHealthBarValue(HealthBarHandler.GetHealthBarValue() - 0.05f);
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 }

@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: cddc403d2f10441fdb7b5c6c46d3e176, type: 2}
 --- !u!1 &40587903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9097591894110645284, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
@@ -847,7 +847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1334805577
 Transform:
   m_ObjectHideFlags: 0
@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8806104454052531322, guid: e36967958ffb0464c99314e70c4a1f34, type: 3}
-  tower: {fileID: 1877431340}
+  target: {fileID: 0}
   player: {fileID: 394858820}
   enemyArray: []
 --- !u!4 &1855119250
@@ -1495,11 +1495,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876879136}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1877431340 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5057653755723284925, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
-  m_PrefabInstance: {fileID: 5057653754573322787}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2119804494
 GameObject:
   m_ObjectHideFlags: 0

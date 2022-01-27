@@ -5,7 +5,7 @@ using UnityEngine;
 public class CreateEnemy : MonoBehaviour
 {
     public GameObject enemy;
-    public GameObject tower;
+    public GameObject target;
 
     private int xPos;
     private int zPos;
@@ -21,14 +21,12 @@ public class CreateEnemy : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Spawn", 4, 5);
-        GameObject itWorks = new GameObject();
-        enemyArray[0] = itWorks;
     }
 
     Vector3 getRandomPos()
     {
         float _x = Random.Range(-20, 20);
-        float _y = 1.8f;
+        float _y = 5f;
         float _z = 40;
 
         Vector3 newPos = new Vector3(_x, _y, _z);
@@ -37,15 +35,12 @@ public class CreateEnemy : MonoBehaviour
     void Spawn()
     {
         currentE = Instantiate(enemy, getRandomPos(), new Quaternion(0, 180, 0, 0));
-        currentE.transform.LookAt(tower.transform);
+        currentE.transform.LookAt(target.transform);
         enemyArray.Add(currentE);
     }
 
     private void Update()
     {
-        foreach (GameObject number in enemyArray)
-        {
-            number.GetComponent<Rigidbody>().AddForce(number.transform.forward * 2.8f);
-        }
+        
     }
 }

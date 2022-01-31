@@ -11,18 +11,27 @@ public class EnemyMovement : MonoBehaviour
     float lookRadius = 80f;
     UnityEngine.AI.NavMeshAgent agent;
 
+
     public List<GameObject> enemyArray = new List<GameObject>();
 
+    //CreateEnemy tgt;
+    //private void Awake()
+    //{
+    //    GameObject gameObject = new GameObject("CreateEnemy");
+    //    tgt = gameObject.AddComponent<CreateEnemy>();
+    //}
+
+
     void Start()
-    {
+    { 
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
+
     void Update()
     {
-        CreateEnemy tgt = new CreateEnemy();
-        enemyArray = tgt.enemyArray;
-        enemy.transform.LookAt(target);
+    //    enemyArray = tgt.enemyArray;
+        Debug.Log(enemyArray[1].name);
 
         foreach (GameObject number in enemyArray)
         {
@@ -31,13 +40,10 @@ public class EnemyMovement : MonoBehaviour
             if (distance <= lookRadius)
                 agent.SetDestination(target.position);
 
-            //Debug.Log(number);
-            //number.GetComponent<Rigidbody>().AddForce(number.transform.forward * 10);
+            Debug.Log(number);
         }
-
-        //  enemy.AddComponent<Rigidbody>().AddForce(new Vector3(0, 0, -500));
-
     }
+
 
     private void OnCollisionEnter(Collision c)
     {

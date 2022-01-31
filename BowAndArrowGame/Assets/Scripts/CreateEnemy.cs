@@ -9,7 +9,6 @@ public class CreateEnemy : MonoBehaviour
 
     private int xPos;
     private int zPos;
-    private int enemyCount = 0;
     
 
     public Transform player;
@@ -39,8 +38,8 @@ public class CreateEnemy : MonoBehaviour
         enemyArray.Add(currentE);
     }
 
-    private void Update()
+    void Update()
     {
-        
+        Debug.Log(enemyArray[1].name);
     }
 }

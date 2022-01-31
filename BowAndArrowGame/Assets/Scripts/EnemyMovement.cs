@@ -9,13 +9,13 @@ public class EnemyMovement : MonoBehaviour
     public Transform target;
 
     float lookRadius = 80f;
-    NavMeshAgent agent;
+    UnityEngine.AI.NavMeshAgent agent;
 
     public List<GameObject> enemyArray = new List<GameObject>();
 
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
     void Update()

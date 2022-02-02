@@ -15,7 +15,7 @@ public class CreateEnemy : MonoBehaviour
 
     private GameObject currentE;
     public List<GameObject> enemyArray = new List<GameObject>();
-
+    private float numOfEnemies = 0;
    
     void Start()
     {
@@ -35,11 +35,17 @@ public class CreateEnemy : MonoBehaviour
     {
         currentE = Instantiate(enemy, getRandomPos(), new Quaternion(0, 180, 0, 0));
         currentE.transform.LookAt(target.transform);
+        numOfEnemies += 1;
+        currentE.name = "Enemy" + numOfEnemies;
         enemyArray.Add(currentE);
     }
 
     void Update()
     {
-        Debug.Log(enemyArray[1].name);
+        
+        //foreach (GameObject x in enemyArray)
+        //{
+        //    Debug.Log(x);
+        //}
     }
 }

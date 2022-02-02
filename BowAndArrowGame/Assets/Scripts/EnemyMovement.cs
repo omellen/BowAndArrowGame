@@ -30,11 +30,18 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-    //    enemyArray = tgt.enemyArray;
-        Debug.Log(enemyArray[1].name);
+        //    enemyArray = tgt.enemyArray;
+
+        enemyArray = GameObject.Find("CreatingThyEnemy").GetComponent<CreateEnemy>().enemyArray;
+
+        
+
+
+
 
         foreach (GameObject number in enemyArray)
         {
+            Debug.Log(number);
             float distance = Vector3.Distance(target.position, transform.position);
 
             if (distance <= lookRadius)

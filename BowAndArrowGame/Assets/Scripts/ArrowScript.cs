@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ArrowScript : MonoBehaviour
 {
-    private float depth = 0.3f;
+  
     public GameObject arrow;
     public GameObject enemy;
 

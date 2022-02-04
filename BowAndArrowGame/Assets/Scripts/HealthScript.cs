@@ -15,8 +15,8 @@ public class HealthScript : MonoBehaviour
     {
         if(HealthBarHandler.GetHealthBarValue() == 0)
         {
-            Destroy(barrier);
-            if(barrier.active == false)
+            barrier.SetActive(false);
+            if(!barrier.activeSelf)
             {
                 GameManager.gameIsOver = true;
             }

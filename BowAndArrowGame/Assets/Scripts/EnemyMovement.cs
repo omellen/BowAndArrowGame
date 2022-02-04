@@ -14,7 +14,6 @@ public class EnemyMovement : MonoBehaviour
 
     public List<GameObject> enemyArray = new List<GameObject>();
 
-
     void Start()
     { 
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -33,9 +32,7 @@ public class EnemyMovement : MonoBehaviour
             float distance = Vector3.Distance(target.position, transform.position);
 
             if (distance <= lookRadius)
-                agent.SetDestination(target.position);
-
-            Debug.Log(number);
+                agent.SetDestination(target.position); 
         }
     }
 
@@ -58,4 +55,6 @@ public class EnemyMovement : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
+
+    
 }

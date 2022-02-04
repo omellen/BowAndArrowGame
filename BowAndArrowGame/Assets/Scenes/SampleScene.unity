@@ -344,9 +344,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c78e8ee23a5634830a0d3f224fe492f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GOPanel: {fileID: 0}
-  Cursor: {fileID: 0}
-  HealthBar: {fileID: 0}
+  GOPanel: {fileID: 626425369}
+  TargetCursor: {fileID: 2146091976}
+  HealthBar: {fileID: 1875880496}
 --- !u!4 &272940143
 Transform:
   m_ObjectHideFlags: 0
@@ -2194,6 +2194,7 @@ GameObject:
   - component: {fileID: 2000864082}
   - component: {fileID: 2000864081}
   - component: {fileID: 2000864080}
+  - component: {fileID: 2000864083}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2303,6 +2304,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000864078}
   m_CullTransparentMesh: 1
+--- !u!114 &2000864083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000864078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd86ae2c23f44725a18648dd24b8512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GOPanel: {fileID: 0}
+  TargetCursor: {fileID: 0}
+  HealthBar: {fileID: 0}
 --- !u!1 &2099089859
 GameObject:
   m_ObjectHideFlags: 0

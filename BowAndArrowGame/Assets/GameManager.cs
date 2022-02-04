@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject GOPanel;
-    public GameObject Cursor;
+    public GameObject TargetCursor;
     public GameObject HealthBar;
 
     public static bool gameIsOver = false;
@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         HealthBar.SetActive(true);
-        Cursor.SetActive(true);
+        TargetCursor.SetActive(true);
         GOPanel.SetActive(false);
     }
 
@@ -24,7 +24,14 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         HealthBar.SetActive(false);
-        Cursor.SetActive(false);
+        TargetCursor.SetActive(false);
         GOPanel.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public static bool isGameOver()
+    {
+        return gameIsOver;
     }
 }

@@ -19,9 +19,8 @@ public class ArrowScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision c)
     {
-        string name = "";
 
-        Debug.Log(c.collider.tag);
+        //Debug.Log(c.collider.tag);
         if (c.collider.tag == "Enemy")
         {
             Destroy(c.collider.gameObject);

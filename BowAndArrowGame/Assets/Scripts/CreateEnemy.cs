@@ -7,20 +7,27 @@ public class CreateEnemy : MonoBehaviour
     public GameObject enemy;
     public GameObject target;
 
-    private int xPos;
-    private int zPos;
-    
-
     public Transform player;
 
     private GameObject currentE;
+
+
+    private int xPos;
+    private int zPos;
+
+    
     public List<GameObject> enemyArray = new List<GameObject>();
     private float numOfEnemies = 0;
-   
+
+    bool gameIsOver = GameManager.gameIsOver;
+
+
+
     void Start()
     {
-        InvokeRepeating("Spawn", 4, 5);
+        InvokeRepeating("Spawn", 4, 1);
     }
+
 
     Vector3 getRandomPos()
     {
@@ -31,6 +38,8 @@ public class CreateEnemy : MonoBehaviour
         Vector3 newPos = new Vector3(_x, _y, _z);
         return newPos;
     }
+
+
     void Spawn()
     {
         currentE = Instantiate(enemy, getRandomPos(), new Quaternion(0, 180, 0, 0));
@@ -40,12 +49,29 @@ public class CreateEnemy : MonoBehaviour
         enemyArray.Add(currentE);
     }
 
+
     void Update()
     {
-        
-        //foreach (GameObject x in enemyArray)
-        //{
-        //    Debug.Log(x);
-        //}
+        gameIsOver = GameManager.isGameOver();
+        if (gameIsOver == true)
+            DestroyAllEnemies();
+
+        if(RestartButton.StartInvokingAgain() == true)
+        {
+            //InvokeRepeating("Spawn", 4, 1);
+        }
     }
+
+
+    void DestroyAllEnemies()
+    {
+        foreach (GameObject x in enemyArray)
+        {
+            Destroy(x.gameObject);
+        }
+        CancelInvoke();
+        enemyArray.Clear();
+    }
+
+    
 }

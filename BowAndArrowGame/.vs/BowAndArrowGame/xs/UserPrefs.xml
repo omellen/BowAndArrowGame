@@ -1,15 +1,14 @@
 ﻿<Properties StartupConfiguration="{521A9D7F-4010-09D1-5BF0-8DC8881702B8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CreateEnemy.cs">
     <Files>
-      <File FileName="Assets/Scripts/ArrowScript.cs" Line="21" Column="6" />
-      <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="17" Column="1" />
-      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="61" Column="15" />
+      <File FileName="Assets/Scripts/ArrowScript.cs" Line="19" Column="46" />
+      <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="19" Column="44" />
+      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="36" Column="22" />
       <File FileName="Assets/Scripts/HealthBarHandler.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/EnemyMovement.cs" Line="59" Column="5" />
-      <File FileName="Assets/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/GameManager.cs" Line="20" Column="32" />
       <File FileName="Assets/Scripts/HealthScript.cs" Line="21" Column="47" />
-      <File FileName="Assets/RestartButton.cs" Line="16" Column="28" />
-      <File FileName="Assets/Scripts/TerrainManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/RestartButton.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +17,6 @@
             <Node name="Assets" expanded="True">
               <Node name="Scenes" expanded="True" />
               <Node name="Scripts" expanded="True" />
-              <Node name="GameManager.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -35,7 +33,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7ad3f2ff-ba9f-46f5-9451-b08fed993b61" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dd96d487-c93b-4586-8439-8794f8470efb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

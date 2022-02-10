@@ -16,7 +16,7 @@ public class ArrowScript : MonoBehaviour
         enemyArray = GameObject.Find("CreateEnemy").GetComponent<CreateEnemy>().enemyArray;
     }
 
-
+    //when the arrow hits an enemy, it destroys it
     private void OnCollisionEnter(Collision c)
     {
 

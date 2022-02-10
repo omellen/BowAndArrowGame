@@ -2265,7 +2265,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2000864081}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 626425369}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2000864081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2313,12 +2325,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2000864078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bd86ae2c23f44725a18648dd24b8512, type: 3}
+  m_Script: {fileID: 11500000, guid: 33e0ee30592584f7cbd1af4c51d724f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GOPanel: {fileID: 0}
-  TargetCursor: {fileID: 0}
-  HealthBar: {fileID: 0}
+  GOPanel: {fileID: 626425369}
+  TargetCursor: {fileID: 2146091976}
+  HealthBar: {fileID: 1875880496}
 --- !u!1 &2099089859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,7 +2635,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 115564835051634937, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 970294009826851551, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617559421773684596, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
+      propertyPath: m_Name
+      value: TowerGFX
+      objectReference: {fileID: 0}
     - target: {fileID: 5057653755078198547, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5057653755593166576, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2675,6 +2703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 8774789114104440948, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
 --- !u!1001 &9097591892782500726
@@ -2706,7 +2738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9097591894110645280, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.5
+      value: -17.59
       objectReference: {fileID: 0}
     - target: {fileID: 9097591894110645280, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
       propertyPath: m_LocalRotation.w

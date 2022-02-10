@@ -15,6 +15,8 @@ public class CreateArrowScript : MonoBehaviour
     private GameObject currentArrow;
     float depth = 0.3f;
 
+
+    //when "X" clicked, creates a new arrow
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.X))

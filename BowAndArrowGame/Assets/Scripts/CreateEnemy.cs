@@ -22,24 +22,24 @@ public class CreateEnemy : MonoBehaviour
     bool gameIsOver = GameManager.gameIsOver;
 
 
-
+    //repeats spawn
     void Start()
     {
-        InvokeRepeating("Spawn", 4, 1);
+        InvokeRepeating("Spawn", 1, 1);
     }
 
-
+    //where enemy spawns
     Vector3 getRandomPos()
     {
         float _x = Random.Range(-20, 20);
         float _y = 5f;
-        float _z = 40;
+        float _z = 45;
 
         Vector3 newPos = new Vector3(_x, _y, _z);
         return newPos;
     }
 
-
+    //creates a new enemy
     void Spawn()
     {
         currentE = Instantiate(enemy, getRandomPos(), new Quaternion(0, 180, 0, 0));
@@ -62,7 +62,7 @@ public class CreateEnemy : MonoBehaviour
         }
     }
 
-
+    //destroys all enemies
     void DestroyAllEnemies()
     {
         foreach (GameObject x in enemyArray)

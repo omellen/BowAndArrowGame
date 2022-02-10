@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RestartButton : MonoBehaviour
 {
@@ -10,10 +11,7 @@ public class RestartButton : MonoBehaviour
 
     void Start()
     {
-        HealthBar.SetActive(true);
-        TargetCursor.SetActive(true);
-        GOPanel.SetActive(false);
-        StartInvokingAgain();
+        
     }
 
     public static bool StartInvokingAgain()
@@ -21,4 +19,11 @@ public class RestartButton : MonoBehaviour
         return true;
     }
 
+    public void RestartGame()
+    {
+        HealthBar.SetActive(true);
+        TargetCursor.SetActive(true);
+        GOPanel.SetActive(false);
+        StartInvokingAgain();
+    }
 }

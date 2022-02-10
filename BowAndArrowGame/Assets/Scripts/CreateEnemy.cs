@@ -52,14 +52,11 @@ public class CreateEnemy : MonoBehaviour
 
     void Update()
     {
-        gameIsOver = GameManager.isGameOver();
+        gameIsOver = GameManager.IsGameOver();
         if (gameIsOver == true)
             DestroyAllEnemies();
 
-        if(RestartButton.StartInvokingAgain() == true)
-        {
-            //InvokeRepeating("Spawn", 4, 1);
-        }
+       
     }
 
     //destroys all enemies

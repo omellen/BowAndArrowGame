@@ -11,9 +11,17 @@ public class ArrowScript : MonoBehaviour
     private GameObject currentE;
     public List<GameObject> enemyArray = new List<GameObject>();
 
+
+    public static float count;
+
     void Start()
     {
         enemyArray = GameObject.Find("CreateEnemy").GetComponent<CreateEnemy>().enemyArray;
+    }
+
+     void Update()
+    {
+        Debug.Log(count);
     }
 
     //when the arrow hits an enemy, it destroys it
@@ -26,8 +34,6 @@ public class ArrowScript : MonoBehaviour
             Destroy(c.collider.gameObject);
             Destroy(arrow);
         }
-
-
 
     }
 }

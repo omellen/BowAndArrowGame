@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{521A9D7F-4010-09D1-5BF0-8DC8881702B8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CreateEnemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ArrowScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/ArrowScript.cs" Line="35" Column="28" />
+      <File FileName="Assets/Scripts/ArrowScript.cs" Line="36" Column="1" />
       <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="19" Column="44" />
       <File FileName="Assets/Scripts/CreateEnemy.cs" Line="55" Column="35" />
       <File FileName="Assets/Scripts/HealthBarHandler.cs" Line="1" Column="1" />
@@ -16,9 +16,7 @@
           <Node name="BowAndArrowGame" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scenes" expanded="True" />
-              <Node name="Scripts" expanded="True">
-                <Node name="CreateEnemy.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -35,7 +33,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1034232f-d996-4520-8df7-381cbc0603be" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a2c3ef4f-2b03-43f6-8656-ca34983188fb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

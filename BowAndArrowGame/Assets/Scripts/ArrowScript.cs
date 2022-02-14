@@ -33,7 +33,19 @@ public class ArrowScript : MonoBehaviour
         {
             Destroy(c.collider.gameObject);
             Destroy(arrow);
+
+            //foreach (GameObject x in enemyArray)
+            //{
+            //    if (x.name != c.collider.name)
+            //    {
+            //        count += 1;
+            //    }
+            //}
         }
 
+        
+
     }
+
+   
 }

@@ -2764,6 +2764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerGFX
       objectReference: {fileID: 0}
+    - target: {fileID: 2617559421773684596, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5057653755078198547, guid: 9879ecf6e3ccf492f9a659f868f45fe4, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2846,12 +2850,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9097591894110645280, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097591894110645280, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9097591894110645280, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.5
+      value: 25.37
       objectReference: {fileID: 0}
     - target: {fileID: 9097591894110645280, guid: 29a3fea25aa034a00aa4664d920dae39, type: 3}
       propertyPath: m_LocalPosition.z

@@ -21,7 +21,6 @@ public class ArrowScript : MonoBehaviour
 
      void Update()
     {
-        Debug.Log(count);
     }
 
     //when the arrow hits an enemy, it destroys it
@@ -43,9 +42,6 @@ public class ArrowScript : MonoBehaviour
             //}
         }
 
-        
-
     }
 
-   
 }

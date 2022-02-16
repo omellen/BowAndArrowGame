@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public static float count;
 
     public static bool gameIsOver = false;
+    public static bool newGame = false;
 
     void Start()
     {
@@ -29,9 +30,17 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (gameIsOver == true)
+        {
+            gameIsOver = false;
             Invoke("GameOver", 1);
+        }
+            
 
-
+        if (newGame == true)
+        {
+            newGame = false;
+            Invoke("ResetGame", 1);
+        }
     }
 
     public void GameOver()
@@ -42,6 +51,7 @@ public class GameManager : MonoBehaviour
 
         can.enabled = false;
         endscreen.enabled = true;
+        endscreen.gameObject.SetActive(true);
 
         Cursor.lockState = CursorLockMode.None;
     }
@@ -58,6 +68,15 @@ public class GameManager : MonoBehaviour
 
     public void SetCount() {
         ECounter.text = "" + count;
+    }
+
+    public void ResetGame()
+    {
+        can.enabled = true;
+        endscreen.enabled = false;
+
+        endscreen.gameObject.SetActive(false);
+        can.gameObject.SetActive(true);
     }
 
 }

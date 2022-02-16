@@ -1,32 +1,32 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject GOPanel;
-    public GameObject TargetCursor;
-    public GameObject HealthBar;
-
-    public Canvas can;
+    public Canvas gameCanvas;
     public Canvas endscreen;
+    public Canvas loadScreen;
+
+    public GameObject creatingEnemyObject;
 
     public Text ECounter;
     public static float count;
 
     public static bool gameIsOver = false;
-    public static bool newGame = false;
+    public static bool startNewGame = false;
+
 
     void Start()
     {
-        //HealthBar.SetActive(true);
-        //TargetCursor.SetActive(true);
-        //GOPanel.SetActive(false);
-        //ECounter.SetActive(false);
-
-        can.enabled = true;
+        gameCanvas.enabled = false;
+        gameCanvas.gameObject.SetActive(false);
         endscreen.enabled = false;
-    }
+        endscreen.gameObject.SetActive(false);
+        loadScreen.enabled = true;
+        loadScreen.gameObject.SetActive(true);
 
+    }
     void Update()
     {
         if (gameIsOver == true)
@@ -34,32 +34,45 @@ public class GameManager : MonoBehaviour
             gameIsOver = false;
             Invoke("GameOver", 1);
         }
-            
 
-        if (newGame == true)
+        if (startNewGame == true)
         {
-            newGame = false;
-            Invoke("ResetGame", 1);
+            startNewGame = false;
+            Invoke("StartGame", 1);
         }
     }
 
     public void GameOver()
     {
-        //HealthBar.SetActive(false);
-        //TargetCursor.SetActive(false);
-        //GOPanel.SetActive(true);
-
-        can.enabled = false;
+        gameCanvas.enabled = false;
         endscreen.enabled = true;
         endscreen.gameObject.SetActive(true);
 
         Cursor.lockState = CursorLockMode.None;
     }
 
+    public void StartGame()
+    {
+        gameCanvas.enabled = true;
+        gameCanvas.gameObject.SetActive(true);
+        endscreen.enabled = false;
+        endscreen.gameObject.SetActive(false);
+        loadScreen.enabled = false;
+        loadScreen.gameObject.SetActive(false);
+
+        Cursor.lockState = CursorLockMode.Locked;
+
+        GameObject.Find("CreatingThyEnemy").GetComponent<CreateEnemy>().enabled = true;
+
+    }
+
     public static bool IsGameOver()
     {
         return gameIsOver;
     }
+
+
+
 
     public static void ReturnCount(float number)
     {
@@ -68,15 +81,6 @@ public class GameManager : MonoBehaviour
 
     public void SetCount() {
         ECounter.text = "" + count;
-    }
-
-    public void StartGame()
-    {
-        can.enabled = true;
-        endscreen.enabled = false;
-
-        endscreen.gameObject.SetActive(false);
-        can.gameObject.SetActive(true);
     }
 
 }

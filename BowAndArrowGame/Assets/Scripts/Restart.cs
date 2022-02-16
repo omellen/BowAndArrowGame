@@ -5,13 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-    private CreateEnemy eScript;
-    public void RestartGame()
+
+    public Canvas loadScreen;
+
+    public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
         //eScript.InvokeRepeating("Spawn", 1, 1);
-        GameManager.newGame = true;
+        GameManager.startNewGame = true;
         
+    }
+
+    public void LoadMainScreen()
+    {
+        loadScreen.enabled = true;
+        loadScreen.gameObject.SetActive(true);
     }
 
 }

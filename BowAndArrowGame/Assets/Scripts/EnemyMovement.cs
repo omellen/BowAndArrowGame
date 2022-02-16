@@ -26,9 +26,6 @@ public class EnemyMovement : MonoBehaviour
 
         foreach (GameObject number in enemyArray)
         {
-            //Debug.Log(number);
-
-
             float distance = Vector3.Distance(target.position, transform.position);
 
             if (distance <= lookRadius)

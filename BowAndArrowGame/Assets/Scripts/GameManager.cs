@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         ECounter.text = "" + count;
     }
 
-    public void ResetGame()
+    public void StartGame()
     {
         can.enabled = true;
         endscreen.enabled = false;

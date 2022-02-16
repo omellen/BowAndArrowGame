@@ -55,8 +55,6 @@ public class CreateEnemy : MonoBehaviour
         gameIsOver = GameManager.IsGameOver();
         if (gameIsOver == true)
             DestroyAllEnemies();
-
-       
     }
 
     //destroys all enemies

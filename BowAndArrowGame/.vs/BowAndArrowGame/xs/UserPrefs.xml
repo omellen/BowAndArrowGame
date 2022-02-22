@@ -1,24 +1,17 @@
 ﻿<Properties StartupConfiguration="{521A9D7F-4010-09D1-5BF0-8DC8881702B8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CreateBlueEnemy.cs">
     <Files>
-      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="28" Column="38" />
       <File FileName="Assets/Scripts/EnemyMovement.cs" Line="25" Column="86" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="65" Column="88" />
       <File FileName="Assets/Scripts/MouseLook.cs" Line="14" Column="11" />
       <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="29" Column="40" />
-      <File FileName="Assets/Scripts/Restart.cs" Line="4" Column="1" NotebookId="1" />
+      <File FileName="Assets/CreateBlueEnemy.cs" Line="28" Column="38" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BowAndArrowGame" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scenes" expanded="True" />
-              <Node name="Scripts" expanded="True">
-                <Node name="GameManager.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="BowAndArrowGame" expanded="True" selected="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -33,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a156c920-4016-440a-9c3c-ac19b6be8a4c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9b9d99fd-5c9e-456d-836d-a7c82efe03c5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

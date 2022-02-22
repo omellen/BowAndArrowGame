@@ -68,6 +68,7 @@
     <Compile Include="Assets/Imported Assests/IL3DN/Scripts/IL3DN_SimpleMouseLook.cs" />
     <Compile Include="Assets/Imported Assests/IL3DN/Scripts/IL3DN_SimpleFPSController.cs" />
     <Compile Include="Assets/Scripts/Restart.cs" />
+    <Compile Include="Assets/CreateBlueEnemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Imported Assests/Polytope Studio/Lowpoly Medieval Environments/Sources/Shaders/PT_Vegetation_Plants_Shader.shader" />

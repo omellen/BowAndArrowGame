@@ -8,9 +8,7 @@ public class GameManager : MonoBehaviour
     public Canvas endscreen;
     public Canvas loadScreen;
 
-    public GameObject creatingEnemyObject;
 
-    public Text ECounter;
     public static float count;
 
     public static bool gameIsOver = false;
@@ -63,7 +61,7 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         GameObject.Find("CreatingThyEnemy").GetComponent<CreateEnemy>().enabled = true;
-
+        GameObject.Find("CreatingThyEnemy").GetComponent<Timer>().enabled = true;
     }
 
     public static bool IsGameOver()
@@ -80,7 +78,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void SetCount() {
-        ECounter.text = "" + count;
     }
 
 }

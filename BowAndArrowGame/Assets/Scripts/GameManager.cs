@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public Canvas gameCanvas;
     public Canvas endscreen;
     public Canvas loadScreen;
+    public Canvas Instructions;
 
 
     public static float count;
@@ -23,8 +24,10 @@ public class GameManager : MonoBehaviour
         endscreen.gameObject.SetActive(false);
         loadScreen.enabled = true;
         loadScreen.gameObject.SetActive(true);
-
+        Instructions.enabled = false;
+        Instructions.gameObject.SetActive(false);
     }
+
     void Update()
     {
         if (gameIsOver == true)
@@ -57,6 +60,8 @@ public class GameManager : MonoBehaviour
         endscreen.gameObject.SetActive(false);
         loadScreen.enabled = false;
         loadScreen.gameObject.SetActive(false);
+        Instructions.enabled = false;
+        Instructions.gameObject.SetActive(false);
 
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -77,7 +82,16 @@ public class GameManager : MonoBehaviour
         count = number;
     }
 
-    public void SetCount() {
+    public void HowToPlay()
+    {
+        gameCanvas.enabled = false;
+        gameCanvas.gameObject.SetActive(false);
+        endscreen.enabled = false;
+        endscreen.gameObject.SetActive(false);
+        loadScreen.enabled = false;
+        loadScreen.gameObject.SetActive(false);
+        Instructions.enabled = true;
+        Instructions.gameObject.SetActive(true);
     }
 
 }

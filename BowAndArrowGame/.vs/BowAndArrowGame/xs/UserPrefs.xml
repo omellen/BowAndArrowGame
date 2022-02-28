@@ -1,17 +1,29 @@
 ﻿<Properties StartupConfiguration="{521A9D7F-4010-09D1-5BF0-8DC8881702B8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CreateBlueEnemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TerrainManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="28" Column="38" />
-      <File FileName="Assets/Scripts/EnemyMovement.cs" Line="25" Column="86" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="65" Column="88" />
-      <File FileName="Assets/Scripts/MouseLook.cs" Line="14" Column="11" />
-      <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="29" Column="40" />
-      <File FileName="Assets/CreateBlueEnemy.cs" Line="28" Column="38" NotebookId="1" />
+      <File FileName="Assets/Scripts/CreateEnemy.cs" Line="93" Column="49" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="54" Column="9" />
+      <File FileName="Assets/Scripts/Timer.cs" Line="8" Column="42" />
+      <File FileName="Assets/Scripts/ArrowScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CreateArrowScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemyMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HealthBarHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HealthScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MouseLook.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Restart.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TerrainManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BowAndArrowGame" expanded="True" selected="True" />
+          <Node name="BowAndArrowGame" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="TerrainManager.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -26,7 +38,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9b9d99fd-5c9e-456d-836d-a7c82efe03c5" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7635e2b3-ea6b-462e-b9be-41a97f857238" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

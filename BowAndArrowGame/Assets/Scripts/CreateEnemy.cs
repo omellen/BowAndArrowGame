@@ -42,10 +42,15 @@ public class CreateEnemy : MonoBehaviour
         if (timeIsDone)
         {
             DestroyAllEnemies();
-            Timer.timeRemaining = 20;
+            Timer.timeRemaining = 45;
             timeIsDone = false;
             waveNumber += 1;
-            repeatRate -= 0.5f;
+
+            if (waveNumber == 4)
+                repeatRate /= 1.3f;
+            else
+                repeatRate /= 1.7f;
+
             waveTxt.text = "Wave: " + waveNumber;
             InvokeRepeating("Spawn", 1, repeatRate);
         }

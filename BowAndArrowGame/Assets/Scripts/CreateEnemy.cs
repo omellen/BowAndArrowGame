@@ -96,7 +96,5 @@ public class CreateEnemy : MonoBehaviour
         waveTxt.text = "Wave: " + waveNumber;
 
         InvokeRepeating("Spawn", 1, repeatRate);
-    }
-
-    
+    }  
 }
